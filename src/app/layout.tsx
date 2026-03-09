@@ -1,57 +1,20 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kadhambam Multi-Cuisine Restaurant | Best Dining in Coimbatore",  description: "Experience authentic multi-cuisine dining at Kadhambam. 4.3⭐ rated restaurant in Tatabad offering biryanis, tandoori, Chinese, and premium desserts. Reserve your table today!",  keywords: "restaurant Coimbatore, biryani Coimbatore, multi-cuisine restaurant, dining Tatabad, food delivery Coimbatore, table reservation",  metadataBase: new URL("https://kadhambam.com"),
-  alternates: {
-    canonical: "https://kadhambam.com"},
-  openGraph: {
-    title: "Kadhambam Multi-Cuisine Restaurant",    description: "Premium dining experience in Coimbatore. Authentic recipes, fresh ingredients, and warm hospitality. Call: 098433 41001",    url: "https://kadhambam.com",    siteName: "Kadhambam Restaurant",    type: "website",    images: [
-      {
-        url: "http://img.b2bpic.net/free-photo/side-view-fried-minced-with-pan-foil-stove_176474-3090.jpg",        alt: "Kadhambam Multi-Cuisine Restaurant"},
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Kadhambam Multi-Cuisine Restaurant Coimbatore",    description: "Experience authentic multi-cuisine dining. 4.3⭐ rated with 1900+ reviews.",    images: ["http://img.b2bpic.net/free-photo/serving-tables-wedding-old-restaurant_8353-9579.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "Kadhambam Multi-Cuisine Restaurant",  description: "Experience authentic multi-cuisine dining in Coimbatore. Premium biryanis, sizzling starters, and desserts."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} ${montserrat.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1419,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
