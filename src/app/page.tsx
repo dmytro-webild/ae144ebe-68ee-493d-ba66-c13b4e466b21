@@ -9,7 +9,7 @@ import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNinete
 import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Calendar, Chef, Heart, Star, Users, Utensils } from 'lucide-react';
+import { Award, Calendar, Heart, Star, Users, Utensils } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -109,7 +109,7 @@ export default function LandingPage() {
           useInvertedBackground={false}
           bulletPoints={[
             {
-              title: "Authentic Recipes",              description: "Traditional multi-cuisine dishes prepared with premium ingredients and family-tested recipes.",              icon: Chef
+              title: "Authentic Recipes",              description: "Traditional multi-cuisine dishes prepared with premium ingredients and family-tested recipes.",              icon: Heart
             },
             {
               title: "Premium Quality",              description: "Only the finest ingredients sourced locally to ensure freshness and quality in every dish.",              icon: Award
@@ -212,7 +212,7 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              tag: "Address",              title: "Our Location",              subtitle: "Easy to find",              description: "Dr Alagappa Chettiar Rd, Hudco Colony, Tatabad, Coimbatore, Tamil Nadu 641012. Located in the prime dining area with ample parking.",              imageSrc: "http://img.b2bpic.net/free-photo/gradient-infographic-elements_52683-8249.jpg"
+              tag: "Address",              title: "Our Location",              subtitle: "Easy to find",              description: "Dr Alagappa Chettiar Rd, Hudco Colony, Tatabad, Coimbatore, Tamil Nadu 641012. Located in the prime dining area with ample parking.",              imageSrc: "http://img.b2bpic.net/free-vector/gradient-infographic-elements_52683-8249.jpg"
             },
             {
               id: 2,
