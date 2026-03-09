@@ -198,7 +198,7 @@ export default function LandingPage() {
           useInvertedBackground={false}
           inputPlaceholder="Enter your email for reservation details"
           buttonText="Reserve Table"
-          termsText="We'll contact you shortly to confirm your reservation. Call us at 098433 41001 for immediate booking."
+          termsText="We'll call you within 30 minutes to confirm your reservation. Already have a date in mind? Call 098433 41001 for instant booking"
         />
       </div>
 
