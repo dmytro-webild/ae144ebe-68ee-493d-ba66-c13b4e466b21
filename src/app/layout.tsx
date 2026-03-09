@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kadhambam Multi-Cuisine Restaurant",  description: "Experience authentic multi-cuisine dining in Coimbatore. Premium biryanis, sizzling starters, and desserts."};
+  title: "Kadhambam Multi-Cuisine Restaurant",  description: "Experience authentic multi-cuisine dining in Coimbatore. Premium biryanis, sizzling starters, and desserts."
+};
 
 export default function RootLayout({
   children,
